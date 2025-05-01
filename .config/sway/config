@@ -44,6 +44,7 @@ set $menu wofi --show drun
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
+include "~/.config/sway/input.conf"
 #
 # Example configuration:
 #
