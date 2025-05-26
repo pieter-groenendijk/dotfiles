@@ -17,6 +17,8 @@ sudo emerge --sync
     # linux-firmware
 # Bluetooth
     # bluez
+# Fonts
+    # Jetbrains Mono
 sudo emerge \
     --ask \
     --noreplace \
@@ -26,6 +28,7 @@ sudo emerge \
     pipewire \
     wireplumber \
     linux-firmware \
-    bluez
+    bluez \
+    media-fonts/jetbrains-mono
 
 sudo rc-update add bluetooth default
