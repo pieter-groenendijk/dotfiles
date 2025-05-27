@@ -8,6 +8,7 @@ sudo emerge --sync
 # --noreplace: Only build when no version installed
 #
 # sway: Tiling Window Manager: https://packages.gentoo.org/packages/gui-wm/sway
+    # swaybg: sway background utility
     # wofi: (Application) Launcher: https://packages.gentoo.org/packages/gui-apps/wofi
     # foot: Terminal Emulator: https://packages.gentoo.org/packages/gui-apps/foot
 # Audio:
@@ -23,6 +24,7 @@ sudo emerge \
     --ask \
     --noreplace \
     sway \
+    swaybg \
     wofi \
     foot \
     pipewire \

@@ -5,4 +5,5 @@ include "./config.d/application_variables.conf"
 include "./config.d/key_bindings.conf"
 include "./config.d/status_bar.conf"
 
+include "./config.d/style.conf"
 include "./config.d/start.conf"
