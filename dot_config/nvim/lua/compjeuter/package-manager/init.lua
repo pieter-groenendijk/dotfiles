@@ -1,1 +1,1 @@
-require("lazy")
+require("compjeuter.package-manager.lazy")

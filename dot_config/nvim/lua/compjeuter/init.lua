@@ -1,3 +1,3 @@
-require("before")
-require("package-manager")
-require("after")
+require("compjeuter.before")
+require("compjeuter.package-manager")
+require("compjeuter.after")
