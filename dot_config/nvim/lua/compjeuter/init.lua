@@ -1,3 +1,6 @@
-require("compjeuter.before")
-require("compjeuter.package-manager")
-require("compjeuter.after")
+local leader = " "
+vim.g.mapleader = leader
+vim.g.maplocalleader = leader
+
+require("compjeuter.options")
+require("compjeuter.lazy")
