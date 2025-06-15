@@ -8,7 +8,7 @@ return {
     },
     lazy = false, 
     config = function()
-        vim.keymap.set("n", "<leader>1", ":Neotree filesystem reveal left<CR>")
+        vim.keymap.set("n", "<leader>1", ":Neotree toggle<CR>")
     end
 }
 
