@@ -1,7 +1,21 @@
 return {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     dependencies = { 'nvim-lua/plenary.nvim' },
-    config = function()
+    opts = {
+        defaults = {
+            file_ignore_patterns = {
+                "node_modules", 
+
+                "wp%-includes",
+                "wp%-admin",
+
+                ".git"
+            },
+        },
+    },
+    config = function(_, opts)
+        require("telescope").setup(opts)
+
         local telScope = require("telescope.builtin")
 
         vim.keymap.set("n", "<leader>2", telScope.find_files, {})
