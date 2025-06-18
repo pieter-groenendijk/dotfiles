@@ -6,9 +6,18 @@ return {
         "nvim-tree/nvim-web-devicons", 
         "MunifTanjim/nui.nvim",
     },
-    lazy = false, 
     config = function()
         vim.keymap.set("n", "<leader>1", ":Neotree toggle<CR>")
+
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                },
+            },
+        })
     end
 }
 
