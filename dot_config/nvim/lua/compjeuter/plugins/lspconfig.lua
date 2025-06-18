@@ -6,6 +6,8 @@ return {
     config = function()
         local cfg = require("lspconfig")
 
+
+
         -- keys
         function set(binding, execFunc, options)
             if (options == nil) then
@@ -30,10 +32,15 @@ return {
             vim.lsp.format {async = true}
         end)
 
+
+
         -- setting up
         local capabilities = require("blink.cmp").get_lsp_capabilities()
-            
 
-        cfg.lua_ls.setup({})
+        for server, config in pairs(require("compjeuter.shared.lsp")) do
+            config.capabilities = capabilities
+
+            cfg[server].setup(config)
+        end
     end
 }

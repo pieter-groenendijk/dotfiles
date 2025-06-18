@@ -7,7 +7,7 @@ return {
         local config = require("nvim-treesitter.configs")
 
         config.setup({
-            ensure_installed = require("compjeuter.languages"),
+            ensure_installed = require("compjeuter.shared.languages"),
             highlight = {enable = true},
             indent = {enable = true},
         })
