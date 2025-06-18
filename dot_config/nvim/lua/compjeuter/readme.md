@@ -2,7 +2,7 @@
 ## TODO
 - DONE: LSP's 
 - DONE: autocomplete 
-- On first start fuzzy file finder doesn't update on typing. Can't search.
+- IGNORE: On first start fuzzy file finder doesn't update on typing. Can't search.
 - Something to move betwen windows, such as neo-tree and code window.
 - disable automatic wrapping, maybe make toggable?
 - workspaces/code tabs

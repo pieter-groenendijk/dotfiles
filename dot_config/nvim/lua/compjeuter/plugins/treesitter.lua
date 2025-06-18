@@ -4,9 +4,9 @@ return {
     lazy = false, 
     build = ":TSUpdate",
     config = function() 
-        local config = require("nvim-treesitter.configs")
+        local cfg = require("nvim-treesitter.configs")
 
-        config.setup({
+        cfg.setup({
             ensure_installed = require("compjeuter.shared.languages"),
             highlight = {enable = true},
             indent = {enable = true},
