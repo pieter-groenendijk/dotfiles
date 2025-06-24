@@ -9,3 +9,4 @@
 - Ctrl+/ -> comment selected lines
 - neo-tree bindings
 - when pasting, also automatically format `=` that selection.
+- Small banner-like component that shows amount of errors, warnings found by lsp in a file.
