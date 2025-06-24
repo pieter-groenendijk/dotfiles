@@ -4,3 +4,4 @@ vim.g.maplocalleader = leader
 
 require("compjeuter.options")
 require("compjeuter.lazy")
+require("compjeuter.keys")

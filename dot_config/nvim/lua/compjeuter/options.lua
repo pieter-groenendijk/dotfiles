@@ -18,4 +18,3 @@ o.tabstop = tabSize
 local doWrap = false
 
 o.wrap = doWrap
-o.wo.wrap = doWrap
