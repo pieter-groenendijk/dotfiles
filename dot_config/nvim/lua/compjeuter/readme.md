@@ -6,7 +6,9 @@
 - DONE (BUILTIN): Something to move betwen windows, such as neo-tree and code window.
 - DONE: disable automatic wrapping, maybe make toggable?
 - IGNORE: workspaces/code tabs
+- DONE: neo-tree bindings
+- When all windows close, don't automatically close nvim too. I tend to 
+close it without intended.
 - Ctrl+/ -> comment selected lines
-- neo-tree bindings
 - when pasting, also automatically format `=` that selection.
 - Small banner-like component that shows amount of errors, warnings found by lsp in a file.
