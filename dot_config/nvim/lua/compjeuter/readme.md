@@ -11,4 +11,5 @@
 close it without intended.
 - Ctrl+/ -> comment selected lines
 - when pasting, also automatically format `=` that selection.
+- markdown table formatting
 - Small banner-like component that shows amount of errors, warnings found by lsp in a file.
