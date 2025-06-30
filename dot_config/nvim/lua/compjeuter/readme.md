@@ -13,3 +13,4 @@ close it without intended.
 - when pasting, also automatically format `=` that selection.
 - markdown table formatting
 - Small banner-like component that shows amount of errors, warnings found by lsp in a file.
+- Yanking, does also copy to clipboard; clipboard and buffer are synced?
