@@ -2,7 +2,9 @@
 ## TODO
 - DONE: LSP's 
 - DONE: autocomplete 
+- Always two LSP's running
 - On first start fuzzy file finder doesn't update on typing. Can't search. 
+- When opening neo-tree, open focused on current file
 - DONE (BUILTIN): Something to move betwen windows, such as neo-tree and code window.
 - DONE: disable automatic wrapping, maybe make toggable?
 - IGNORE: workspaces/code tabs
