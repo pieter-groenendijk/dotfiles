@@ -7,6 +7,8 @@ M.keys = function(_table)
     for key, _ in pairs(_table) do
         table.insert(keys, key)
     end
+
+    return keys
 end
 
 
