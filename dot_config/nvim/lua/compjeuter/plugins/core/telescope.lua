@@ -3,14 +3,7 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = {
         defaults = {
-            file_ignore_patterns = {
-                "node_modules", 
-
-                "wp%-includes",
-                "wp%-admin",
-
-                ".git"
-            },
+            file_ignore_patterns = require("compjeuter.shared.ignored")
         },
     },
     config = function(_, opts)
