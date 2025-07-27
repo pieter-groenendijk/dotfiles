@@ -13,6 +13,6 @@ set("n", "<leader>K", "<C-w>K", {})
 set("n", "<leader>L", "<C-w>L", {})
 
 -- Switching between open files
-set("n", "<leader>p", ":bprev<CR>", {})
-set("n", "<leader>n", ":bnext<CR>", {})
-set("n", "<leader>l", ":ls<CR>", {})
+set("n", "<leader>bp", ":bprev<CR>", {})
+set("n", "<leader>bn", ":bnext<CR>", {})
+set("n", "<leader>bl", ":ls<CR>", {})
