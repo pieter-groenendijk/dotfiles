@@ -35,10 +35,10 @@ return {
 
 
         -- setting up
-        local capabilities = require("blink.cmp").get_lsp_capabilities()
+        local blinkCaps = require("blink.cmp").get_lsp_capabilities()
 
         for server, config in pairs(require("compjeuter.shared.lsp")) do
-            config.capabilities = capabilities
+            config.capabilities = blinkCaps
 
             cfg[server].setup(config)
         end
