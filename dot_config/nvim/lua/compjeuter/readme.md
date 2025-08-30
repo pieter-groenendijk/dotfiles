@@ -17,5 +17,6 @@ close it without intended.
 - [ ] Small banner-like component that shows amount of errors, warnings found by lsp in a file.
 - [ ] Yanking, does also copy to clipboard; clipboard and buffer are synced?
 - [ ] Markdown viewer, remove jumping, maybe one use it for tables? 
+- [ ] Absolute tabs, with keymappings
 
 
