@@ -8,4 +8,5 @@ return {
     html = {}, -- html
     cssls = {}, -- css
     svelte = {}, -- svelte
+    bashls = {},
 }
