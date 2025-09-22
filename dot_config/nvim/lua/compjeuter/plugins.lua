@@ -8,5 +8,7 @@ return {
     require("compjeuter.plugins.optional.catppuccin"), -- Theme
     require("compjeuter.plugins.optional.neo-tree"), -- Filesystem tree (sidebar)
     require("compjeuter.plugins.optional.render-markdown"), -- Markdown rendering, mainly for nice table alignment.
+    --require("compjeuter.plugins.optional.leetcode"), -- Leetcode integration (on-demand I hope)
+    require("compjeuter.plugins.optional.grammarous"),
 }
 
