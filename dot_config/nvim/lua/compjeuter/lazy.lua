@@ -17,10 +17,3 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup("compjeuter.plugins")
--- require("lazy").setup({
---     spec = {
---         {
---             import = "compjeuter.plugins",
---         }
---     },
--- })
