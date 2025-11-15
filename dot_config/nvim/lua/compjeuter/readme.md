@@ -3,6 +3,8 @@
 - [x] LSP's 
 - [x] autocomplete 
 - [x] Fix: Always two LSP's running
+- [ ] Fix: The `require('lspconfig')` "framework" is deprecated, use vim.lsp.config (see :help lspconfig-nvim-0.11) instead.
+Feature will be removed in nvim-lspconfig v3.0.0
 - [ ] On first start fuzzy file finder doesn't update on typing. Can't search. 
 - [ ] When opening neo-tree, open focused on current file
 - [x] Something to move betwen windows, such as neo-tree and code window.

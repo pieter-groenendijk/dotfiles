@@ -22,3 +22,13 @@ set("n", "<leader>b2", ":buffer 101", {})
 set("n", "<leader>b3", ":buffer 102", {})
 set("n", "<leader>b4", ":buffer 103", {})
 set("n", "<leader>b5", ":buffer 104", {})
+
+
+-- Telescope
+local telScope = require("telescope.builtin")
+set("n", "<leader>2", telScope.find_files, {})
+set("n", "<leader>3", telScope.live_grep, {})
+
+
+-- Neo tree
+set("n", "<leader>1", ":Neotree toggle<CR>")

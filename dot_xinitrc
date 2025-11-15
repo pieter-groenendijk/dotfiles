@@ -1,5 +1,0 @@
-#!/bin/bash
-
-eval "$(dbus-launch --sh-syntax --exit-with-session)"
-
-exec sway
