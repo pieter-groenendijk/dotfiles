@@ -1,0 +1,31 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+
+# Terminal config
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+export PATH="$HOME/.local/bin:$PATH"
+
+# Preparing XDG_RUNTIME_DIR
+userId=`id --user`
+if [ $? -ne 0 ]
+then
+	echo "failed to set XDG_RUNTIME_DIR: failed to find user id: no such user found"
+	exit 1
+fi
+
+groupId=`id --group`
+if [ $? -ne 0 ]
+then
+	echo "failed to set XDG_RUNTIME_DIR: failed to find group id: no such user found"
+	exit 1
+fi
+
+XDG_RUNTIME_DIR="/run/user/${userId}"
+
+mkdir --parents "${XDG_RUNTIME_DIR}"
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR}"
