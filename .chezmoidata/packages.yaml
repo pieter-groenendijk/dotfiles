@@ -1,0 +1,39 @@
+packages:
+  comptop:
+    repos:
+      - void-repo-multilib
+      - void-repo-multilib-nonfree
+      - void-repo-nonfree
+    packages:
+      - docker
+      - docker-compose
+      - vim
+      - nodejs
+
+      - grub-x86_64-efi
+      - acpi
+      - intel-gpu-tools
+      - intel-ucode
+      - intel-video-accel
+      - linux-firmware
+      - mesa-dri
+      - mesa-vulkan-intel
+      - blueman
+      - bluez
+      - libspa-bluetooth
+      - pipewire
+      - brightnessctl
+      - nautilus
+      - vulkan-loader
+
+      - seatd
+      - socklog-void
+
+      - sway
+      - wofi
+      - firefox
+      - foot
+      - dbus
+      - chezmoi
+      - curl
+      - flatpak
