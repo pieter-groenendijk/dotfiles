@@ -20,6 +20,16 @@
       // Finding things
       "alt-s f": "file_finder::Toggle",
       "alt-s s": "project_symbols::Toggle",
+
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // Autocomplete
+      "ctrl-y": "editor::ConfirmCompletion",
+      "ctrl-p": "menu::SelectPrevious",
+      "ctrl-n": "menu::SelectNext",
     },
   },
   {
