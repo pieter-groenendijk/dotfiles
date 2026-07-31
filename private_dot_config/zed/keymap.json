@@ -9,152 +9,29 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "alt-t": "terminal_panel::ToggleFocus",
+      "alt-f": "project_panel::ToggleFocus",
+
+      // Relative navigation
+      "alt-h": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-x": "pane::CloseActiveItem",
+
+      // Finding things
+      "alt-s f": "file_finder::Toggle",
+      "alt-s s": "project_symbols::Toggle",
     },
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "ProjectPanel",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "alt-f": "project_panel::Toggle",
     },
   },
   {
-    "context": "SkillCreator > Editor",
+    "context": "Terminal",
     "bindings": {
-      "ctrl-w": "workspace::CloseWindow"
-    }
+      "alt-t": "terminal_panel::Toggle",
+    },
   },
-  {
-    "context": "SkillCreator > Editor",
-    "unbind": {
-      "ctrl-w": "workspace::CloseWindow"
-    }
-  },
-  {
-    "context": "SkillCreator",
-    "bindings": {
-      "ctrl-w": "workspace::CloseWindow"
-    }
-  },
-  {
-    "context": "SkillCreator",
-    "unbind": {
-      "ctrl-w": "workspace::CloseWindow"
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-w": "workspace::CloseWindow"
-    }
-  },
-  {
-    "unbind": {
-      "ctrl-shift-w": "workspace::CloseWindow"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-x": [
-        "pane::CloseActiveItem",
-        {
-          "close_pinned": false
-        }
-      ]
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "ctrl-w": [
-        "pane::CloseActiveItem",
-        {
-          "close_pinned": false
-        }
-      ]
-    }
-  },
-  {
-    "context": "(vim_mode == helix_normal || vim_mode == helix_select) && !menu",
-    "bindings": {
-      "space shift-s": "outline::Toggle"
-    }
-  },
-  {
-    "context": "(vim_mode == helix_normal || vim_mode == helix_select) && !menu",
-    "unbind": {
-      "space s": "outline::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "alt-f alt-s": "project_symbols::Toggle"
-    }
-  },
-  {
-    "context": "VimControl && !menu",
-    "unbind": {
-      "g shift-s": "project_symbols::Toggle"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "alt-f": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "!Editor && !Terminal",
-    "unbind": {
-      "space f": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-l": "pane::ActivateNextItem"
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "ctrl-pagedown": "pane::ActivateNextItem"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-h": "pane::ActivatePreviousItem"
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "ctrl-pageup": "pane::ActivatePreviousItem"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-shift-h": "pane::SwapItemLeft"
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "ctrl-shift-pageup": "pane::SwapItemLeft"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-shift-l": "pane::SwapItemRight"
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "ctrl-shift-pagedown": "pane::SwapItemRight"
-    }
-  }
 ]
