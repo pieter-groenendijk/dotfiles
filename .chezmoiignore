@@ -1,7 +1,11 @@
+readme.md
+
 {{- if ne .chezmoi.hostname "comptop" }}
-.bashrc
-.bash_profile
+  .bashrc
+  .bash_profile
+  install-packages-comptop.sh
 {{- end }}
 
 {{- if ne .chezmoi.hostname "compjeuterpc" }}
+  install-packages-compjeuterpc.sh
 {{- end }}
