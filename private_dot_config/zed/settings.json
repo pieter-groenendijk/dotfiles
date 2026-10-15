@@ -7,50 +7,106 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "preferred_line_length": 120,
-  "soft_wrap": "bounded",
-  "show_whitespaces": "selection",
-  "tab_size": 2,
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.addmissingimports.ts": true,
+        "source.removeunusedimports.ts": true,
+        "source.sortimports.ts": true,
+        "source.organizeimports.ts": true,
+      },
+    },
+    "Svelte": {
+      "code_actions_on_format": {
+        "source.addmissingimports.ts": true,
+        "source.removeunusedimports.ts": true,
+        "source.sortimports.ts": true,
+        "source.organizeimports.ts": true,
+      },
+    },
+    "Zig": {
+      // ZLS doesn't support variable tab size yet, so this will have to do for now — or ever maybe
+      "tab_size": 4,
+    },
+  },
+
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+
+  "indent_guides": {
+    "line_width": 1,
+    "active_line_width": 2,
+    "background_coloring": "disabled",
+    "coloring": "indent_aware",
+  },
+  "use_auto_surround": false,
+  "use_autoclose": false,
+  "format_on_save": "on",
+
   "cli_default_open_behavior": "existing_window",
+
+  "preferred_line_length": 80,
+  "soft_wrap": "bounded",
+  "tab_size": 2,
+  "show_whitespaces": "selection",
+
   "gutter": {
-    "min_line_number_digits": 4
+    "min_line_number_digits": 4,
   },
   "relative_line_numbers": "enabled",
+
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": null,
+  },
+  "collaboration_panel": {
+    "dock": null,
+  },
+  "disable_ai": true,
+  "agent": {
+    "dock": null,
+  },
+  "git_panel": {
+    "dock": null,
+  },
+
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 12.0,
   "cursor_blink": false,
   "ui_font_weight": 500.0,
   "buffer_line_height": "standard",
   "ui_font_family": ".ZedSans",
   "buffer_font_weight": 500.0,
-  "project_panel": {
-    "dock": "left"
-  },
-  "outline_panel": {
-    "dock": "left"
-  },
-  "collaboration_panel": {
-    "dock": "left"
-  },
-  "agent": {
-    "dock": "right",
-    "favorite_models": [],
-    "model_parameters": []
-  },
-  "git_panel": {
-    "dock": "left"
-  },
-  "base_keymap": "VSCode",
+
   "telemetry": {
-    "diagnostics": false,
+    "diagnostics": true,
     "metrics": true,
-    "anthropic_retention": false
+    "anthropic_retention": false,
   },
-  "vim_mode": true,
+
   "icon_theme": "Zed (Default)",
-  "ui_font_size": 14.0,
-  "buffer_font_size": 12.0,
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark Hard",
+    "dark": "Gruvbox Dark Soft",
   },
 }
