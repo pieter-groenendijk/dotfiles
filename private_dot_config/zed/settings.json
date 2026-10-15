@@ -74,17 +74,17 @@
     "dock": "left",
   },
   "outline_panel": {
-    "dock": null,
+    "button": false,
   },
   "collaboration_panel": {
-    "dock": null,
+    "button": false,
   },
   "disable_ai": true,
   "agent": {
-    "dock": null,
+    "button": false,
   },
   "git_panel": {
-    "dock": null,
+    "button": false,
   },
 
   "base_keymap": "VSCode",
