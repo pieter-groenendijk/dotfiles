@@ -17,10 +17,25 @@
       "alt-l": "pane::ActivateNextItem",
       "alt-x": "pane::CloseActiveItem",
 
+      // Absolute navigation
+      "alt-1": ["pane::ActivateItem", 0],
+      "alt-2": ["pane::ActivateItem", 1],
+      "alt-3": ["pane::ActivateItem", 2],
+      "alt-4": ["pane::ActivateItem", 3],
+      "alt-5": ["pane::ActivateItem", 4],
+      "alt-6": ["pane::ActivateItem", 5],
+      "alt-7": ["pane::ActivateItem", 6],
+      "alt-8": ["pane::ActivateItem", 7],
+      "alt-9": ["pane::ActivateItem", 8],
+      "alt-0": ["pane::ActivateItem", 9],
+
+      // Relative order manipulation
+      "alt-shift-h": "pane::SwapItemLeft",
+      "alt-shift-l": "pane::SwapItemRight",
+
       // Finding things
       "alt-s f": "file_finder::Toggle",
       "alt-s s": "project_symbols::Toggle",
-
     },
   },
   {
@@ -42,6 +57,19 @@
     "context": "Terminal",
     "bindings": {
       "alt-t": "terminal_panel::Toggle",
+    },
+  },
+
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "alt-shift-h": "call_hierarchy::ShowIncomingCalls",
+    },
+  },
+  {
+    "context": "CallHierarchyPicker > Picker > Editor",
+    "unbind": {
+      "alt-shift-h": "call_hierarchy::ToggleDirection",
     },
   },
 ]
