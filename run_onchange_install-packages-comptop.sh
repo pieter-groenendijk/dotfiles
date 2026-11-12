@@ -35,6 +35,7 @@ sudo xbps-install --sync \
   NetworkManager \
   pipewire \
   brightnessctl \
+  gammastep \
   nautilus \
   vulkan-loader \
   seatd \

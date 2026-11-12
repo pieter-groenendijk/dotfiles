@@ -3,6 +3,7 @@
 
 # Applications to starts
 exec pipewire
+exec gammastep -l 52:5 -b 1:0.5 -t 6500:3500
 
 ### Variables
 #
